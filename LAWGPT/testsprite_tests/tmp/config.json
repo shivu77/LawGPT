@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3001/http://localhost:3001/#chat",
+  "executionArgs": {
+    "projectName": "LAW-GPT",
+    "projectPath": "C:\\Users\\Gourav Bhat\\Downloads\\LAW-GPT",
+    "testIds": [],
+    "additionalInstruction": "Focus on testing the Developer Modal UI/UX, especially the 3D scroll animations, image loading, and modal interactions. Check for glitches in scroll direction detection, animation smoothness, and image rendering.",
+    "envs": {
+      "API_KEY": "sk-user-Vdwoz93HYDIycu9oSZI4nhLjL2pGBMjKnCWq4Kut9ewnnWCmciQNthuFC3P041mhNfGw4nTcaAudggAnJonqAsdJqC8xGszOTIU5cMhznabINZKVtp5OPEfjr_8xkUYX72k"
+    }
+  },
+  "proxy": "http://b9ef4ae6-0901-4dda-a2b4-a07904877e20:OxwApe2zUBxlVG06aArG0CZQhEuRsSba@tun.testsprite.com:8080"
+}

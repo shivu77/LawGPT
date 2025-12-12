@@ -1,0 +1,151 @@
+{
+  "tech_stack": [
+    "JavaScript",
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "Framer Motion",
+    "TypeScript (partial)",
+    "HTML5",
+    "CSS3"
+  ],
+  "features": [
+    {
+      "name": "Developer Modal",
+      "description": "Modal component displaying team members (Guide and Developers) with 3D scroll animation effects",
+      "files": [
+        "frontend/src/components/DeveloperModal.jsx"
+      ]
+    },
+    {
+      "name": "Container Scroll Animation",
+      "description": "3D scroll-based animation component that rotates cards based on scroll direction and position",
+      "files": [
+        "frontend/src/components/ui/ContainerScrollAnimation.jsx"
+      ]
+    },
+    {
+      "name": "About Modal",
+      "description": "Modal displaying information about LAW-GPT including training data, features, and capabilities",
+      "files": [
+        "frontend/src/components/AboutModal.jsx"
+      ]
+    },
+    {
+      "name": "NavBar Component",
+      "description": "Tubelight animated navigation bar with smooth transitions and active state management",
+      "files": [
+        "frontend/src/components/ui/TubelightNavbar.jsx",
+        "frontend/src/components/ui/NavBarDemo.jsx"
+      ]
+    },
+    {
+      "name": "Chat Interface",
+      "description": "Main chat interface for legal queries with category filtering, query history, and message display",
+      "files": [
+        "frontend/src/components/ChatInterface.jsx"
+      ]
+    },
+    {
+      "name": "Query History",
+      "description": "Component for displaying and managing user query history stored in localStorage",
+      "files": [
+        "frontend/src/components/QueryHistory.jsx"
+      ]
+    },
+    {
+      "name": "Category Filter",
+      "description": "Filter component for legal categories with animated selection",
+      "files": [
+        "frontend/src/components/CategoryFilter.jsx"
+      ]
+    },
+    {
+      "name": "Theme Context",
+      "description": "React context for dark/light theme management",
+      "files": [
+        "frontend/src/contexts/ThemeContext.jsx"
+      ]
+    },
+    {
+      "name": "API Client",
+      "description": "HTTP client for backend API communication",
+      "files": [
+        "frontend/src/api/client.js"
+      ]
+    },
+    {
+      "name": "Header Component",
+      "description": "Application header with navigation and branding",
+      "files": [
+        "frontend/src/components/Header.jsx"
+      ]
+    },
+    {
+      "name": "Footer Component",
+      "description": "Application footer with links and information",
+      "files": [
+        "frontend/src/components/Footer.jsx"
+      ]
+    },
+    {
+      "name": "System Loader",
+      "description": "Initial loading screen with animation",
+      "files": [
+        "frontend/src/components/SystemLoader.jsx"
+      ]
+    },
+    {
+      "name": "Animation Components",
+      "description": "Reusable animation components including FadeInOnScroll, FloatingCard, StaggeredContainer, TextShimmer, RippleButton, TypingLoader",
+      "files": [
+        "frontend/src/components/FadeInOnScroll.jsx",
+        "frontend/src/components/FloatingCard.jsx",
+        "frontend/src/components/StaggeredContainer.jsx",
+        "frontend/src/components/TextShimmer.jsx",
+        "frontend/src/components/RippleButton.jsx",
+        "frontend/src/components/TypingLoader.jsx"
+      ]
+    },
+    {
+      "name": "Dock Component",
+      "description": "Mac-style dock component for navigation with magnification effect",
+      "files": [
+        "frontend/src/components/ui/Dock.jsx"
+      ]
+    },
+    {
+      "name": "Main Application",
+      "description": "Root application component managing global state and layout",
+      "files": [
+        "frontend/src/App.jsx",
+        "frontend/src/main.jsx"
+      ]
+    },
+    {
+      "name": "Utility Functions",
+      "description": "Shared utility functions including className merging",
+      "files": [
+        "frontend/src/lib/utils.js"
+      ]
+    },
+    {
+      "name": "Styling Configuration",
+      "description": "Tailwind CSS configuration with custom fonts, colors, and spacing",
+      "files": [
+        "frontend/tailwind.config.js",
+        "frontend/src/index.css",
+        "frontend/postcss.config.js"
+      ]
+    },
+    {
+      "name": "Build Configuration",
+      "description": "Vite build configuration and development server setup",
+      "files": [
+        "frontend/vite.config.js",
+        "frontend/package.json"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,88 @@
+🧩 Main Font Families Used
+
+From the style and letterforms, this site clearly uses modern sans-serif web fonts, with likely a mono font for numbers.
+
+1. Primary UI Font (Headings, Body Text)
+
+Font family: Inter, or very close to it (Satoshi / Space Grotesk / Manrope style)
+
+Clean geometric sans-serif
+
+Tight spacing, consistent stroke width
+
+Used for:
+
+“AI Trading in Real Markets” headline
+
+Paragraphs, feature descriptions
+
+Navigation menu (“LIVE | LEADERBOARD | MODELS”)
+
+Weight range: 500–700 (medium to bold)
+
+Letter spacing: slightly expanded in uppercase labels (≈ 0.05em)
+
+2. Numeric / Metric Font
+
+Font family: Roboto Mono, IBM Plex Mono, or similar monospaced style
+
+Used in:
+
+All numeric data: $1,243,776.76, +2.17%, etc.
+
+BTC, ETH, SOL tickers
+
+“Daily PNL / Hourly PNL” boxes
+
+Reason: Monospacing keeps numbers aligned vertically
+
+Weight: 500–600
+
+3. Display Title Font (Logo / Section Headings)
+
+Font family: Custom pixel-inspired serif — looks like "Press Start 2P", "Pixel Operator", or a custom retro bitmap type.
+
+Seen in: “Alpha Arena” logo
+
+Retro-arcade vibe; blocky serif edges
+
+Gives a nostalgic console or 80s trading terminal feeling
+
+4. Mini Label / Meta Text Font
+
+Same as main (Inter or Manrope) but:
+
+Size: 10–12px
+
+Weight: 500 (medium)
+
+All uppercase with wider tracking (≈ 0.1em)
+
+Used for:
+
+“LAUNCH DATE”, “STARTING CAPITAL”, etc.
+
+Small section captions (“PERPS”, “SESSION INSIGHT”)
+
+5. Code / Technical Text (tabs like README.TXT, MODELCHAT)
+
+Font family: Roboto Mono or JetBrains Mono
+
+To match the dev/terminal aesthetic
+
+Monospaced alignment
+
+Used for:
+
+Tab names like README.TXT
+
+Log sections or data tables
+
+🎨 Font Hierarchy Summary
+Use Case	Font	Style	Weight	Example
+Headings / Section Titles	Inter / Manrope	Sans-serif	600–700	“AI Trading in Real Markets”
+Body Paragraphs	Inter / Manrope	Sans-serif	400–500	“Alpha Arena is a groundbreaking platform…”
+Numbers & Stats	Roboto Mono / IBM Plex Mono	Monospace	500–600	$1,243,776.76, +2.17%
+Labels / Meta text	Inter (caps)	Sans-serif	500	“LAUNCH DATE”, “STARTING CAPITAL”
+Logo	Press Start 2P / Pixel Operator	Pixel serif	Bold	“Alpha Arena”
+Code Tabs	JetBrains Mono / Roboto Mono	Monospace	500	“README.TXT”, “MODELCHAT”
