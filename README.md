@@ -4,6 +4,12 @@
 
 **System upgraded from A+ (86.2/100) to World-Class (95+/100)**
 
+### Repository Structure Update (Dec 12, 2025)
+- The project is now organized under `LAWGPT/` at the repository root.
+- Only `LAWGPT/` and this `README.md` exist at the root.
+- All paths referenced below are relative to `LAWGPT/`.
+- Examples: `config/.env` → `LAWGPT/config/.env`, `frontend/` → `LAWGPT/frontend/`, backend scripts → `LAWGPT/kaanoon_test/`.
+
 ✅ **7 Critical Fixes Implemented:**
 1. 🔴 **IPC Truncation FIXED** - 100% accuracy (was 91.3%)
 2. 🔴 **Expert Legal Terminology** - Latin maxims, technical jargon
