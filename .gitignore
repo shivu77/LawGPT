@@ -1,0 +1,40 @@
+
+.clinerules/byterover-rules.md
+.kilocode/rules/byterover-rules.md
+.roo/rules/byterover-rules.md
+.windsurf/rules/byterover-rules.md
+.cursor/rules/byterover-rules.mdc
+.kiro/steering/byterover-rules.md
+.qoder/rules/byterover-rules.md
+.augment/rules/byterover-rules.md
+
+# Secrets and environment
+config/.env
+frontend/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Databases and caches
+chroma_db_hybrid/
+chroma_db/
+*.sqlite3
+
+# Large datasets
+DATA/
+
+# Nested repositories
+windsurf-pro-trial-reset/
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store

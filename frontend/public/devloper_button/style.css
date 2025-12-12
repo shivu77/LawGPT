@@ -1,0 +1,495 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Canva Sans", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    position: relative;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+.scrollElement {
+    position: absolute;
+    height: 7000px;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+}
+
+/* LAW-GPT Developers Title - appears at the start, goes behind mountains */
+.lawgpt-title-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    pointer-events: none;
+}
+
+.lawgpt-main-title {
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+    font-size: 5rem;
+    font-weight: normal;
+    color: #000;
+    margin: 0;
+    text-shadow: 
+        2px 2px 0px #000,
+        4px 4px 0px rgba(0, 0, 0, 0.3);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+}
+
+.lawgpt-developers-title {
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #000;
+    margin: 20px 0 0 0;
+    text-shadow: 
+        2px 2px 0px #000,
+        3px 3px 0px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+}
+
+@media (max-width: 768px) {
+    .lawgpt-main-title {
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
+    .lawgpt-developers-title {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* Developer Section with Glass Effect */
+.developer-section {
+    position: absolute;
+    width: 100%;
+    height: 7000px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+/* Individual card positioning - positioned to appear at viewport center when triggered */
+/* All cards same size */
+.guidance-card-first,
+.developer-card,
+.developer-card-second {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 90%;
+    max-width: 500px;
+    min-height: 550px;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Sunil's card - 20% up and 10% left */
+.guidance-card-first {
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+/* K N Nivedh's card - 35% left, 15% top (near trees/mountains), slight tilt */
+.developer-card {
+    top: 15%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(8deg);
+}
+
+/* Reduce blur effect for K N Nivedh's card */
+.developer-card.glass-card {
+    backdrop-filter: blur(8px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(8px) saturate(180%) !important;
+}
+
+/* Sudev's card - centered */
+.developer-card-second {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.guidance-label {
+    font-size: 1.2rem;
+    color: #000;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    display: block;
+}
+
+.glass-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 60px;
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.3);
+    letter-spacing: 2px;
+}
+
+.developers-grid {
+    display: block;
+    position: relative;
+}
+
+.glass-card {
+    background: rgba(100, 150, 200, 0.25);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid rgba(100, 150, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 100, 200, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Sudev's card - darker background with white text for night scene */
+.developer-card-second.glass-card {
+    background: rgba(30, 50, 80, 0.4) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    border: 2px solid rgba(150, 180, 255, 0.6) !important;
+    box-shadow: 0 8px 32px 0 rgba(20, 60, 120, 0.7) !important;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+}
+
+.developer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    visibility: visible;
+}
+
+.developer-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+    border: 4px solid rgba(100, 150, 255, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.developer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.developer-info h3 {
+    font-size: 1.8rem;
+    color: #000;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+/* Sudev's card - white text */
+.developer-card-second .developer-info h3 {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.developer-role {
+    font-size: 1.1rem;
+    color: #000;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+/* Sudev's card - white text */
+.developer-card-second .developer-role {
+    color: #fff !important;
+}
+
+.developer-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.developer-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    border: 2px solid rgba(100, 150, 255, 0.5);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Sudev's card - white text links */
+.developer-card-second .developer-links a {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.developer-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.developer-card-second .developer-links a:hover {
+    background: rgba(255, 255, 255, 0.35) !important;
+}
+
+.developer-contact {
+    color: #000;
+    margin: 8px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Sudev's card - white text */
+.developer-card-second .developer-contact {
+    color: #fff !important;
+}
+
+.guidance-card-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(100, 150, 200, 0.3);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 2px solid rgba(100, 150, 255, 0.5);
+    justify-content: flex-start;
+}
+
+.guidance-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px auto;
+    border: 5px solid rgba(100, 150, 255, 0.7);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guidance-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.guidance-info h3 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 10px 0;
+    font-weight: normal;
+    display: none;
+}
+
+.guidance-info h2 {
+    font-size: 2.2rem;
+    color: #000;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+.guidance-role {
+    font-size: 1.3rem;
+    color: #000;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.guidance-dept,
+.guidance-institute {
+    font-size: 1rem;
+    color: #000;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.guidance-contact {
+    color: #000;
+    margin: 8px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .developers-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .glass-card {
+        padding: 20px;
+    }
+    
+    .developer-image,
+    .guidance-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .guidance-image {
+        width: 140px;
+        height: 140px;
+    }
+    
+    /* Mobile: All cards centered properly */
+    .guidance-card-first,
+    .developer-card,
+    .developer-card-second {
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 85%;
+        max-width: 400px;
+        min-height: 500px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    /* Mobile: Adjust font sizes for better readability */
+    .developer-info h3,
+    .guidance-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .developer-role,
+    .guidance-role {
+        font-size: 1.1rem;
+    }
+    
+    .developer-contact,
+    .guidance-contact {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 490px) {
+    /* Small mobile: Further adjustments */
+    .guidance-card-first,
+    .developer-card,
+    .developer-card-second {
+        width: 90%;
+        max-width: 350px;
+        min-height: 480px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .developer-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .guidance-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .developer-info h3,
+    .guidance-info h2 {
+        font-size: 1.3rem;
+    }
+    
+    .developer-role,
+    .guidance-role {
+        font-size: 1rem;
+    }
+    
+    .developer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .developer-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #text,
+    #arrow {
+        transform-origin: 50% 50%;
+        transform: translateY(-120px) scale(0.8);
+    }
+
+    #info2 {
+        transform-origin: 50% 50%;
+        transform: translateY(-120px) scale(0.8);
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .developer-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .guidance-info h2 {
+        font-size: 1.6rem;
+    }
+}

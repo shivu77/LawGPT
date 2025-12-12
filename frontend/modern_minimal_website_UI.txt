@@ -1,0 +1,121 @@
+💎 Enhanced Prompt: 
+
+Goal:
+Create a modern, minimal, data-driven website UI  — a clean, futuristic, premium interface that feels professional and structured.
+The design must be generic (usable for AI dashboards, SaaS products, portfolios, or analytics tools) while maintaining the same visual rhythm and component proportions.
+
+🎨 Core Visual System
+
+Base Style
+
+Background: #ffffff (pure white)
+
+Text: #0d1b26 (primary), #6b7278 (secondary)
+
+Borders: 2px solid #0f1720
+
+Cards: 12px rounded corners, subtle shadow 0 4px 10px rgba(0,0,0,0.05)
+
+Layout: clean, grid-aligned, 24px gaps, 1320px max width
+
+Aesthetic: flat design with soft depth — futuristic yet calm
+
+No gradients, neon, or clutter; focus on clarity and precision
+
+✍️ Typography
+
+Headings: Poppins or Inter, bold, tight line height (1.1), responsive sizes (48px desktop → 32px mobile)
+
+Body: Inter or Open Sans, 16px, regular weight, high readability
+
+Numbers / Metrics: Roboto Mono or Space Mono, bold, monospaced for consistency
+
+Labels: Uppercase, 13px, letter-spacing 0.1em, slightly dimmed tone
+
+Maintain perfect vertical rhythm — headings, text, and metrics aligned by baseline.
+
+🧩 Layout Architecture
+
+1. Header
+
+Left: minimalist text/logo
+
+Right: clean inline navigation (no buttons)
+
+Top border thin or none — airy and simple
+
+2. Hero Section
+
+Center-aligned headline (bold, 48px)
+
+Subtext below (max-width 720px, muted gray)
+
+3×2 grid of cards (icon + title + one-line description)
+
+3. Stats Strip
+
+Horizontal row (3–4 compact cards)
+
+Each card: large metric (e.g., “91.07%”) + small label (e.g., “24H CHANGE”)
+
+Slight shadow and hover lift
+
+4. Main Content / Dashboard
+
+Left (60%) — highlight cards or bar visuals (icon + value + subtle trend)
+
+Right (40%) — leaderboard or ranked list (name + score + small metric)
+
+5. Tabbed Panel (below)
+
+Tabs: “OVERVIEW | ACTIVE | HISTORY | SETTINGS”
+
+Active tab: black background, white text
+
+Inactive: transparent with hover underline
+
+Tab content: simple table or stat grid
+
+6. Footer
+
+Minimal line or text area (e.g., “Last updated: 5:47 PM”)
+
+Small and unobtrusive
+
+🌈 Color System
+Element	Color	Purpose
+Primary Text	#0d1b26	Headings, key data
+Secondary Text	#6b7278	Descriptions
+Accent (Positive)	#2cb67d	Growth / success
+Accent (Negative)	#e25555	Decline / warning
+Borders	#0f1720	Card outlines
+Background	#ffffff	Clean foundation
+
+Use soft accent tones, never harsh saturation.
+
+⚡ Interactions & Motion
+
+Card Hover: transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,0.08)
+
+Tabs: smooth underline or fade transition; active tab dark with light text
+
+Metrics: optional fade-in count animation
+
+Responsiveness: stack columns under 960px; maintain spacing hierarchy
+
+🧱 Output Requirements
+
+Stack: React + Tailwind CSS (preferred) or pure HTML/CSS
+
+Fully responsive grid and text scaling
+
+Semantic and accessible markup (no dummy div spamming)
+
+Replace trading content with generic placeholders (e.g., “Project Alpha”, “Performance Index”)
+
+Focus on typography balance, spacing precision, and visual calmness
+
+🧠 Tone & Feel
+
+The interface should feel premium, analytical, quiet, and intelligent — like a modern command center for data.
+It should convey discipline, precision, and clarity, never chaos or overdesign.
